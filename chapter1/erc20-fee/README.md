@@ -29,7 +29,7 @@ cast send $ERC20 'mint(address,uint256)' $ALICE_ADDRESS 10000000000000000000 --p
 cast call $ERC20 'balance(address)(uint256)' $ALICE_ADDRESS
 ```
 
-- We need to deploy a contract which verifies the user signature and execute ERC20 transfers.:
+- We need to deploy a contract which verifies the user signature and execute an ERC20 transfers.:
 
 ```bash
 forge create ERC20Fee --private-key $BOB_PK
